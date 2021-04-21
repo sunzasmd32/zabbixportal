@@ -13,6 +13,9 @@
 		<!-- Styles -->
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<!-- Font awesome CSS -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">		
 		<!-- Custom CSS -->
@@ -152,7 +155,25 @@
 							<!-- work item -->
 							<div class="work-item">
 								<!-- work details image -->
-								<a href="#"><img class="img-responsive" src="img/work/8-removebg-preview.png" alt="" /></a>
+								<button type="button" data-toggle="modal" data-target="#myModal" style="border: none; background: none;"><img class="img-responsive" src="img/work/8-removebg-preview.png" alt="" /></button>
+								<!-- BWC Modal -->
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4>เลือกพื้นที่ในการ Monitor</h4>
+											</div>
+											<div class="modal-body">
+												<a href="http://191.20.2.239/zabbix/zabbix.php?action=map.view&sysmapid=4">Zone Office</a><br>
+												<a href="#">Zone Factory</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
 								<!-- heading -->
 								<h3><a href="#">Branch BWC</a></h3>
 								<!-- brand org -->
